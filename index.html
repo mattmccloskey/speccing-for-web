@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<title></title>
+	<style type="text/css">
+		body {
+			font-size: 16px;
+			font-family: Helvetica;
+			margin: 0;
+			padding: 0;
+		}
+		section {
+			background-color: #4284f3;
+			color: #fff;
+			text-align: center;
+			padding: 50vh 3em;
+			display: block;
+		}
+		body > div {
+			margin: 50vh 0;
+			padding: 3em;
+		}
+		blockquote {
+			font-style: italic;
+		}
+		/*sup {
+			font-size: 26px;
+		}*/
+
+		.tm.px sup {
+			font-size: 26px;
+			top: -1px;
+		}
+
+		.icon.px .glyphicon {
+			font-size: 32px;
+		}
+		/*.tm.px h1 {
+			font-size: 48px;
+		}*/
+
+		.em.increase {
+			font-size: 32px;
+		}
+
+		.px {
+			font-size: 16px;
+		}
+		.px h1 {
+			font-size: 32px;
+		}
+		.px h2 {
+			font-size: 24px;
+		}
+		.px h3 {
+			font-size: 19px;
+		}
+		.px h4 {
+			font-size: 16px;
+		}
+		.px h5 {
+			font-size: 13px;
+		}
+
+		.px.increase {
+			font-size: 32px;
+			padding-left: 48px;
+			padding-right: 48px;
+		}
+		.px.increase h1 {
+			font-size: 48px;
+		}
+		.px.increase h2 {
+			font-size: 34px;
+		}
+		.px.increase h3 {
+			font-size: 30px;
+		}
+		.px.increase h4 {
+			font-size: 28px;
+		}
+		.px.increase h5 {
+			font-size: 26px;
+		}
+
+		.uls-em ul {
+			font-size: 1.5em;
+		}
+		.uls-rem ul {
+			font-size: 1.5rem;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<h1>Browser Defaults</h1>
+		<p>Browsers use EM by default for fonts, margins, &amp; padding.
+	</section>
+	<div class="em">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec libero id odio elementum cursus eget ac justo. Pellentesque dolor erat, auctor vitae urna a, sagittis placerat dui. Donec at dignissim felis. Aliquam at sapien pellentesque sem egestas tristique. Nunc pretium nisl in sem tempor, sed sagittis est placerat. Nullam lobortis, dui quis finibus mattis, lectus dolor rhoncus enim, eget pretium ex purus molestie nisi. Sed vulputate bibendum nulla, sit amet iaculis massa tincidunt non. Phasellus quis dolor hendrerit, euismod nunc vitae, malesuada nulla. Donec vitae odio ipsum. Aliquam condimentum vestibulum tortor, placerat dignissim mauris ultrices ut. Sed vulputate diam nulla, eu cursus urna interdum vitae.</p>
+
+		<h1>Lorem ipsum dolor sit amet</h1>
+		<h2>Lorem ipsum dolor sit amet</h2>
+		<h3>Lorem ipsum dolor sit amet</h3>
+		<h4>Lorem ipsum dolor sit amet</h4>
+		<h5>Lorem ipsum dolor sit amet</h5>
+
+		<ul>
+			<li>This is a list</li>
+			<li>Sed sagittis est placerat</li>
+			<li>Aliquam condimentum vestibulum</li>
+		</ul>
+
+		<a href="#">Link</a>
+	</div>
+
+	<section>
+		<h1>Relative Units Retain Meaning</h1>
+	</section>
+
+	<div class="tm">
+		<p>What size is super text?</p>
+		<h1>Lorem ipsum dolor sit amet<sup>TM</sup></h1>
+		<h5>Lorem ipsum dolor sit amet<sup>TM</sup></h5>
+	</div>
+	<div class="tm px">
+		<p>Defining super text in PX is incorrect, and causes text to loose meaning.</p>
+		<h1>Lorem ipsum dolor sit amet<sup>TM</sup></h1>
+		<h5>Lorem ipsum dolor sit amet<sup>TM</sup></h5>
+	</div>
+
+	<div class="icon">
+		<p>What size is an icon? It's implied that it should be the height of the text</p>
+		<p><span class="glyphicon glyphicon-heart"></span> Lorem ipsum dolor sit amet</p>
+		<h1><span class="glyphicon glyphicon-heart"></span> Lorem ipsum dolor sit amet</h1>
+	</div>
+	<div class="icon px">
+		<p>Defining icon size in PX is incorrect</p>
+		<p><span class="glyphicon glyphicon-heart"></span> Lorem ipsum dolor sit amet</p>
+		<h1><span class="glyphicon glyphicon-heart"></span> Lorem ipsum dolor sit amet</h1>
+	</div>
+
+	<div class="px">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec libero id odio elementum cursus eget ac justo. Pellentesque dolor erat, auctor vitae urna a, sagittis placerat dui. Donec at dignissim felis. Aliquam at sapien pellentesque sem egestas tristique. Nunc pretium nisl in sem tempor, sed sagittis est placerat. Nullam lobortis, dui quis finibus mattis, lectus dolor rhoncus enim, eget pretium ex purus molestie nisi. Sed vulputate bibendum nulla, sit amet iaculis massa tincidunt non. Phasellus quis dolor hendrerit, euismod nunc vitae, malesuada nulla. Donec vitae odio ipsum. Aliquam condimentum vestibulum tortor, placerat dignissim mauris ultrices ut. Sed vulputate diam nulla, eu cursus urna interdum vitae.</p>
+
+		<h1>Lorem ipsum dolor sit amet<sup>TM</sup></h1>
+		<h2>Lorem ipsum dolor sit amet</h2>
+		<h3>Lorem ipsum dolor sit amet</h3>
+		<h4>Lorem ipsum dolor sit amet</h4>
+		<h5>Lorem ipsum dolor sit amet</h5>
+
+		<ul>
+			<li>This is a list</li>
+			<li>Sed sagittis est placerat</li>
+			<li>Aliquam condimentum vestibulum</li>
+		</ul>
+
+		<a href="#">Link</a>
+	</div>
+
+	<div class="em increase">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec libero id odio elementum cursus eget ac justo. Pellentesque dolor erat, auctor vitae urna a, sagittis placerat dui. Donec at dignissim felis. Aliquam at sapien pellentesque sem egestas tristique. Nunc pretium nisl in sem tempor, sed sagittis est placerat. Nullam lobortis, dui quis finibus mattis, lectus dolor rhoncus enim, eget pretium ex purus molestie nisi. Sed vulputate bibendum nulla, sit amet iaculis massa tincidunt non. Phasellus quis dolor hendrerit, euismod nunc vitae, malesuada nulla. Donec vitae odio ipsum. Aliquam condimentum vestibulum tortor, placerat dignissim mauris ultrices ut. Sed vulputate diam nulla, eu cursus urna interdum vitae.</p>
+
+		<h1>Lorem ipsum dolor sit amet<sup>TM</sup></h1>
+		<h2>Lorem ipsum dolor sit amet</h2>
+		<h3>Lorem ipsum dolor sit amet</h3>
+		<h4>Lorem ipsum dolor sit amet</h4>
+		<h5>Lorem ipsum dolor sit amet</h5>
+
+		<ul>
+			<li>This is a list</li>
+			<li>Sed sagittis est placerat</li>
+			<li>Aliquam condimentum vestibulum</li>
+		</ul>
+
+		<a href="#">Link</a>
+	</div>
+	
+	<div class="px increase">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec libero id odio elementum cursus eget ac justo. Pellentesque dolor erat, auctor vitae urna a, sagittis placerat dui. Donec at dignissim felis. Aliquam at sapien pellentesque sem egestas tristique. Nunc pretium nisl in sem tempor, sed sagittis est placerat. Nullam lobortis, dui quis finibus mattis, lectus dolor rhoncus enim, eget pretium ex purus molestie nisi. Sed vulputate bibendum nulla, sit amet iaculis massa tincidunt non. Phasellus quis dolor hendrerit, euismod nunc vitae, malesuada nulla. Donec vitae odio ipsum. Aliquam condimentum vestibulum tortor, placerat dignissim mauris ultrices ut. Sed vulputate diam nulla, eu cursus urna interdum vitae.</p>
+
+		<h1>Lorem ipsum dolor sit amet<sup>TM</sup></h1>
+		<h2>Lorem ipsum dolor sit amet</h2>
+		<h3>Lorem ipsum dolor sit amet</h3>
+		<h4>Lorem ipsum dolor sit amet</h4>
+		<h5>Lorem ipsum dolor sit amet</h5>
+
+		<ul>
+			<li>This is a list</li>
+			<li>Sed sagittis est placerat</li>
+			<li>Aliquam condimentum vestibulum</li>
+		</ul>
+
+		<a href="#">Link</a>
+	</div>
+
+	<section>
+		<h1>EM</h1>
+		<p>EMs values are calculated relative to their nearest parent which has a font-size value defined</p>
+	</section>
+
+	<div>
+		<h2>Nested lists w/ no font-size defined</h2>
+		<ul>
+			<li>This is a list</li>
+			<li>Sed sagittis est placerat</li>
+			<li>Aliquam condimentum vestibulum
+				<ul>
+					<li>This is a list</li>
+					<li>Sed sagittis est placerat</li>
+					<li>Aliquam condimentum vestibulum
+						<ul>
+							<li>This is a list</li>
+							<li>Sed sagittis est placerat</li>
+							<li>Aliquam condimentum vestibulum</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div class="uls-em increase">
+		<h2>Nested lists where UL element is set to 1.5em</h2>
+		<ul>
+			<li>This is a list</li>
+			<li>Sed sagittis est placerat</li>
+			<li>Aliquam condimentum vestibulum
+				<ul>
+					<li>This is a list</li>
+					<li>Sed sagittis est placerat</li>
+					<li>Aliquam condimentum vestibulum
+						<ul>
+							<li>This is a list</li>
+							<li>Sed sagittis est placerat</li>
+							<li>Aliquam condimentum vestibulum</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<section>
+		<h1>REM</h1>
+		<p>(Root)EMs values are calculated relative to the document</p>
+	</section>
+
+	<div class="uls-rem increase">
+		<h2>Nested lists where UL element is set to 1.5rem</h2>
+		<ul>
+			<li>This is a list</li>
+			<li>Sed sagittis est placerat</li>
+			<li>Aliquam condimentum vestibulum
+				<ul>
+					<li>This is a list</li>
+					<li>Sed sagittis est placerat</li>
+					<li>Aliquam condimentum vestibulum
+						<ul>
+							<li>This is a list</li>
+							<li>Sed sagittis est placerat</li>
+							<li>Aliquam condimentum vestibulum</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<section>
+		<h1>Accessibility (a11y)</h1>
+	</section>
+
+	<div style="text-align: center">
+		<h1>Accessibility is quickly becoming non-optional</h1>
+		<p>As from January 2010, all new EUROPA websites have to be created in compliancy with the Web Content Accessibility Guidelines 2.0, level AA.</li>
+		<h3>Companies are often sued over accessibility issues</h3>
+		<p>
+			Netflix<br>
+			Target<br>
+			H&amp;R Block<br>
+			Coles<br>
+			Safeway
+		</p>
+		<h2>Relative units are required</h2>
+		</p>
+		<p>A site must be scalable to 200%</p>
+		<p>Ensuring that text containers resize when the text resizes AND using measurements that are relative to other measurements in the content by using one or more of the following techniques: ...</p>
+		<p>http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html</p>
+
+		<blockquote>"Accessibility is usability in context of disability"<br>
+- Jan Eric Hellbusch, bit.ly/a11y-is-usability</blockquote>
+
+		<blockquote>"Empathy encourages you to understand who uses your product, forces you ask deeper questions and motivates the many redesigns you go through to get a product right."<br>
+- Scott Jensen, bit.ly/a11y-empathy</blockquote>
+	</div>
+
+	<section>
+		<h1>Spec</h1>
+	</section>
+	<div>
+		<p>Think not about pixel size, but how text size relates to the things around it.</p>
+		<p>Design semantically - This is an H1, not a 32px piece of text.</p>
+		<p>Spec from the top down - Start by defining know elements in the design (e.g. paragraph text, header text, links, buttons, etc.), then reference those, and make notes about exceptions if something doesn't play by the rules. (e.g. - this is header text BUT 120% normal size, or Blue instead of black). Once an exception is reused several times, make a top level definition for it.</p>
+		<p>Font sizes, as well as padding &amp; margins, should be specced in rems, except for where it is known that size is relative to a specefic parent (e.g. super text and inline icons).</p>
+	</div>
+</body>
+</html>
